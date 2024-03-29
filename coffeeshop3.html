@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Menu</title>
+</head>
+<style>
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;}
+
+header img{
+    width: 80px;
+    height: 80px;
+}
+
+body{
+    background:black;
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+h1{
+    text-align: center;
+    color: #d3ad7f;
+    letter-spacing: 5px;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+h1:hover{
+    color: white;
+    letter-spacing: 8px;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: #d3ad7f;
+    text-transform:capitalize;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+.menu .box-container .box{
+    padding:5rem;
+    text-align: center;
+    border:black;    
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background:#fff;
+}
+
+.menu .box-container .box:hover > *{
+    color:black;
+}
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+</style>
+<body>
+
+
+
+<section class="menu" id="menu">
+
+    <header class="heading"><img src="logo.png"> </header>
+    <h1>"Test the best coffee in the town"</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://i.pinimg.com/236x/30/33/65/303365082f0e1a9c377050e73d9f245a.jpg" alt="">
+            <h3>Cold brew coffee</h3>
+            <div class="price">50.99MAD <span>60.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i> </a>
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/236x/6b/f5/8f/6bf58ff28f5ae3b86cff1b1e93c9adf0.jpg" alt="">
+            <h3>Biscoff cloud cofee</h3>
+            <div class="price">50.99MAD<span>60.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/236x/9d/d2/82/9dd28266dea915a4e3dc9c76ea6adde3.jpg" alt="">
+            <h3>Wripped cofee</h3>
+            <div class="price">50.99MAD <span>60.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/236x/d8/c0/a4/d8c0a4e52b8b6c0fcf781b1363ee4a29.jpg" alt="">
+            <h3>Americano</h3>
+            <div class="price">50.99MAD <span>60.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/236x/99/b4/04/99b404ef508edaba362bd47c8d2c5a99.jpg" alt="">
+            <h3>Espresso ceramic</h3>
+            <div class="price">50.99MAD <span>60.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/236x/bb/8a/c5/bb8ac5b33960fb30286788188aeed75c.jpg" alt="">
+            <h3>Granita</h3>
+            <div class="price">50.99MAD <span>70.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/236x/bf/0c/ff/bf0cff01e39eed7a3baf7adbac2c723d.jpg" alt="">
+            <h3>Espresso</h3>
+            <div class="price">50.99MAD <span>60.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/236x/7a/e8/07/7ae807390176253266ababaae90546e6.jpg" alt="">
+            <h3>Bubble milk tea</h3>
+            <div class="price">50.99MAD <span>70.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+        <div class="box">
+            <img src="dalgona.jpeg" alt="">
+            <h3>Bubble milk tea</h3>
+            <div class="price">50.99MAD <span>60.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+
+        <div class="box">
+            <img src="frappuccino.jpeg" alt="">
+            <h3>Cappuccino</h3>
+            <div class="price">50.99MAD <span>70.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+        <div class="box">
+            <img src="iced coffee.jpeg" alt="">
+            <h3>Charcoal coconut</h3>
+            <div class="price">50.99MAD <span>60.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+
+        <div class="box">
+            <img src="matcha.jpeg" alt="">
+            <h3>Matcha Espresso</h3>
+            <div class="price">50.99MAD <span>70.99MAD</span></div>
+            <a href="#" class="btn">add to cart  <i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+    </div>
+</section>
+</body>
+</html>

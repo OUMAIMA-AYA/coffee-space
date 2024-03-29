@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>creat an account</title>
+</head>
+<style>
+  .logo{
+    margin-left: 45%;
+  }
+    h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(200, 172, 120);
+    letter-spacing: 6px;
+    font-size: xx-large;
+    
+  }
+  h2:hover{
+    letter-spacing: 8px;
+
+  }
+  input{
+    width: 40%;
+    height: 25px;
+    padding: 10px;
+    background-color: white;
+    border: white;
+    border-radius: 15px;
+    box-shadow: 4px 5px burlywood;
+  }
+  .date{
+    color: grey;
+  }
+  .cnx{
+    width: 25%;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    padding-bottom:30px;
+    background-color:burlywood;
+    border:white;
+    border-radius: 15px;
+    color: white;
+  }
+  .cnx:hover{
+    width: 25%;
+    letter-spacing: .2rem;
+  }
+  a{
+    align-items: center;
+  }
+  @media  screen and (max-width: 768px){
+    h1{
+      font-size: 2rem;
+    }
+      input{
+        width: 55%;
+      }
+      .nc{
+        width: 45%;
+      }
+      .nc:hover{
+        width: 50%;
+        letter-spacing: .2rem;
+      }
+      .cnx{
+        width: 45%;
+      }
+      .cnx:hover{
+        width: 50%;
+        letter-spacing: .2rem;
+      }
+  }
+    
+</style>
+<body bgcolor="black">
+    <img src="logo.png" class="logo">
+    <h2 align="center">Creat an new account</h2><br>
+    <div class="transition"></div>
+    <form align="center">
+        <input type="text"placeholder="first name"  pattern="[A-Za-z]{8}"><br><br>
+        <input type="text"placeholder="last name" pattern="[A-Za-z]{10}"><br><br>
+        <input type="tel" placeholder="number phone"pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+        <input type="date" placeholder="your birthday" class="date"><br><br>
+        <input type="email" placeholder="E-mail"  class="email"><br><br>
+        <input type="password" placeholder="Mot de passe" maxlength="10" pattern=".{8,}"><br><br><br>
+        <input type="button" value="creat account" class="cnx"><br><br>
+    </form>
+</body>

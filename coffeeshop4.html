@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>our products</title>
+</head>
+<style>
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-top: 6px;
+}
+
+body{
+    background: black;
+}
+.heading{
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.heading:hover{
+    letter-spacing: 6px;
+    color: #d3ad7f;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+h1{
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+h2{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+    padding-top: 4px;
+    font-size: 1.2rem;
+}
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:1rem 3rem;
+    font-size: 1.5rem;
+    color:#fff;
+    background:#d3ad7f;
+    width: 100%;
+    padding-bottom: 10px;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.products{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+
+}
+.box{
+    border: 3px solid #d3ad7f;
+    border-radius: 100px  100px 0px 0px;
+   
+}
+img{
+    border-radius: 100px 100px 0px 0px;
+}
+.third{
+    width:70%;
+}
+footer{
+    background-color:black;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+  }
+  footer a{
+   text-decoration: none;
+   color: white;
+   margin: 12px;
+   text-transform: uppercase;
+   font-style: italic;
+}
+footer a:hover{
+    color:#d3ad7f;
+    border-bottom : 2px solid #d3ad7f;
+}
+.credit{
+    font-size: medium;
+    color: white;
+    text-align: center;
+    font-family:'Roboto', sans-serif ;
+}
+.credit span{
+    color: #d3ad7f;
+}
+@media (max-width:768px){
+    .products{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+
+    }
+    footer{
+        display: none;
+    }
+}
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+</style>
+<body>
+    <header> <img src="logo.png" class="logo"></header>
+    <h1 class="heading"> "our products" </h1>
+    <section class="products">
+        <div class="box-container">
+            <div class="box">
+                <img src="cabsules.webp" alt="" class="img2">
+                    <h2>Capsules</h2>
+                    <a href="coffeeshop6.html" class="btn">See more</a>
+                   </div>   
+                </div>
+            <div class="box">
+                <img src="machines.webp" alt="" class="first">
+                <h2>Machines</h2>
+                    <a href="coffeeshop7.html" class="btn">See more</a>
+                </div>
+                   
+            </div>
+    
+            <div class="box">
+                <img src="poudre.webp" alt="" class="second">
+                <h2>Powder</h2>
+                 <a href="coffeeshop8.html" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BEANS.webp" alt="" style="width:200px; height:160px;">
+                <h2>Beans</h2>
+                 <a href="coffeeshop9.html" class="btn">See more</a>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <footer>
+    
+        <div class="links">
+            <a href="coffeeshop.html">home</a>
+            <a href="coffeeshop2.html">about</a>
+            <a href="coffeeshop3.html">menu</a>
+            <a href="5coffeeshop.html">contact</a>
+        </div><br>
+    
+        <div class="credit">created by <span>Miss. AYA OUMAIMA</span> | all rights reserved</div>
+    
+      </footer>
+
+</body>
+
+</html>

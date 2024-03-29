@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+
+
+</head>
+<style>
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+section{
+    padding:5rem ;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:8px 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background:#d3ad7f ;
+}
+
+.btn:hover{
+    letter-spacing: 2px;
+}
+
+.header{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 60px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top:0; left: 0; right: 0;
+   
+
+    
+}
+
+.logo{
+   height: 8rem;
+}
+.header .navbar a{
+    margin:  1rem;
+    font-size: 1.6rem;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header .navbar a:hover{
+    color:#d3ad7f;
+    border-bottom : 2px solid #d3ad7f;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home .content{
+    max-width: 60rem;
+
+}
+ h3{
+    color: white;
+    font-size: 5rem;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#menu-btn{
+    display: none;
+}
+h2{
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    padding-left: 8px;
+    padding-bottom: 10px;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+}
+
+.about .row .image img{
+    width: 80%;
+
+}
+.about .row .content{
+    padding:2rem;
+}
+.about .row .content p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color:#d3ad7f;
+    padding:1rem 0;
+    line-height: 1.8;
+    
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    padding: 40px;
+   text-align: center;
+   padding-left: 10px;
+}
+.footer a{
+    display: inline;
+    color: #d3ad7f;
+    margin-left: 150px;
+    font-size: medium;
+    text-decoration: none;
+    padding: 30px;
+    margin: auto;
+    letter-spacing: 3px;
+}
+.footer a:hover{
+    background-color: #d3ad7f;
+    color: white;
+    letter-spacing: 7px;
+}
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        display: flex;
+        
+    }
+
+
+    .header .navbar a{
+        color:white;
+        margin-left: 2px;
+        margin:0.7rem;
+        font-size: medium;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align:bottom;
+    }
+    .home .content h3{
+        font-size: 5,2rem;}
+    
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .about .row .image img{
+        height: 70%;
+    }}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+</style>
+<body>
+
+<header class="header">
+         <img src="logo.png" alt="" class="logo" >
+    <nav class="navbar">
+        
+        <a href=""><i class="w3-xlarge fa fa-home"></i></a>
+        <a href="coffeeshop2.html">about</i></a>
+        <a href="coffeeshop3.html" >menu</i></a>
+        <a href="coffeeshop4.html">products</i></a>
+        <a href="5coffeeshop.html">contact</i></a></div>
+    </nav>
+    <div class="fas fa-bars" id="menu-btn"></div>
+
+</header>
+
+<section class="home" >
+
+    <div class="content">
+        <h3>WELCOME TO CAFENA</h3><br>
+        <a href="coffeeshop3.html" class="btn">get yours now</a>
+    </div>
+
+</section>
+<section class="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="img1.jpeg"alt="">
+        </div>
+
+        <div class="content">
+            <h2>what makes our coffee special?</h2>
+            <p>Because we are a family Business, we strive to provide the best customer service in the Coffee Industry across the world, that is why our clients stay with us:<br>
+                " Guaranteed fresh roasted coffee supply consistently."<br>
+                " Dedicated Customer Success Service "<br>
+                " Fast shipping and handling ".<br>
+                " Competitive pricing "</p>
+            <a href="coffeeshop2.html" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+    <a href="#">Facebook</a>
+    <a href="#" >Twitter</a>
+    <a href="#">Instagram</a>
+</footer>
+
+</body>
+</html>
